@@ -17,11 +17,11 @@ def clean_vacancy(vacancy):
 def get_vacancies():
     try:
         params = {
-            'text': 'frontend',
+            'text': 'Frontend',
             'specialization': 1,
             'page': 1,
             'per_page': 100,
-            'date_from': f'2023-12-12T00:00:00+0300',
+            'date_from': f'2023-12-10T00:00:00+0300',
             'date_to': f'2023-12-13T00:00:00+0300',
         }
         data = []
