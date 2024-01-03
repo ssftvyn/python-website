@@ -1,4 +1,18 @@
+{% load static %}
 <header>
-    <h4>Мой сайт</h4>
-    <!-- Добавьте здесь другие элементы заголовка -->
+    <div class='logo-container'>
+        <a href="{% url 'home' %}">
+            <img class='logo' src="{% static 'main/image/front.svg' %}" alt="Описание изображения">
+        </a>
+        <h3>Frontend-разработчик</h3>
+    </div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Главная</a></li>
+                <li><a href="{% url 'info' %}">Информация</a></li>
+                <li><a href="{% url 'geography' %}">География</a></li>
+                <li><a href="{% url 'vacancies' %}">Вакансии</a></li>
+                <li><a href="{% url 'skills' %}">Навыки</a></li>
+            </ul>
+        </nav>
 </header>
