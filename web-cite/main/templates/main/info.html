@@ -1,16 +1,20 @@
 {% extends 'main/mainpage.html' %}
 {% load static %}
 {% block styles %} 
-<link href="{% static 'main/css/home.css' %}" rel="stylesheet">
+<link href="{% static 'main/css/info.css' %}" rel="stylesheet">
 <link href="{% static 'main/css/main.css' %}" rel="stylesheet">
 {% endblock %}
 {% block content %}
-    <div style="text-align: center">
-         {{ infopage.text|safe }}
-        <div style="padding: 30px 10% 0 10%">
-            <img width="48%" src="{{ infopage.graph_left.url }}"/>
-            <img width="48%" src="{{ infopage.graph_right.url }}"/>
+    <div class="admin-info">
+        <h2>Данные о вакансиях</h2>
+        <div class="line"></div>
+        <div class="graphs" style="padding: 30px 10% 0 10%">
+            <h3>Соотношение количество IT вакансий/количество вакансий Frontend</h3>
+            <img class='vac' width="48%" src="{{ infopage.graph_left.url }}"/>
+            <h3>График сранения уровня зарплат</h3>
+            <img class='sal 'width="48%" src="{{ infopage.graph_right.url }}"/>
         </div>
+         {{ infopage.text|safe }}
     </div>
 
 {% endblock %}
