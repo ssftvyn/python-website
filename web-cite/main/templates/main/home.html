@@ -1,9 +1,12 @@
 {% extends 'main/mainpage.html' %}
 {% load static %}
+{% block styles %} 
+<link href="{% static 'main/css/home.css' %}" rel="stylesheet">
+<link href="{% static 'main/css/main.css' %}" rel="stylesheet">
+{% endblock %}
 {% block content %}
     <div>
-    <img class="home_img" src="{{ homepage.image.url }}" alt="homepage_img">
+        <img class="home_img" src="{{ homepage.image.url }}" alt="homepage_img">
         {{ homepage.text|safe }}
-
     </div>
-{% endblock %}
+{% endblock %}  

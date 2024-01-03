@@ -1,0 +1,11 @@
+div{
+    background-color: red;
+}
+
+
+.home_img {
+    float: left;
+    padding: 30px 80px 80px;
+    width: 50%;
+    height: auto;
+}

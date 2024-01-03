@@ -2,16 +2,14 @@ body {
     min-height: 100%;
 }
 
-
 aside {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 15%; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%; 
+    width: 15%; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
     left: 0;
-    /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-x: hidden; 
     padding-top: 20px;
     background: #dbdbdb;
     border-right: 3px solid #111111;
@@ -76,7 +74,7 @@ header h4 {
     height: auto;
 }
 
-.footer {
+footer {
     font-weight: lighter;
     text-align: center;
     background: #4056A1;
@@ -93,16 +91,9 @@ header h4 {
 }
 
 .main {
-    /*font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;*/
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
     margin-left: 12%;
     padding: 40px 70px 40px 100px;
-}
-
-.home_img {
-    float: right;
-    padding: 30px  80px 80px;
-    width: 50%;
-    height: auto;
 }
 
 .skill_list p {
