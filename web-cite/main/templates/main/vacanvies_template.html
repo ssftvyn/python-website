@@ -1,5 +1,9 @@
 {% extends 'main/mainpage.html' %}
 {% load static %}
+{% block styles %} 
+<link href="{% static 'main/css/home.css' %}" rel="stylesheet">
+<link href="{% static 'main/css/main.css' %}" rel="stylesheet">
+{% endblock %}
 {% block content %}
     <div>
         {% for vacancy in vacancies %}

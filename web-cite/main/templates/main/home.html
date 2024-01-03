@@ -7,6 +7,8 @@
 {% block content %}
     <div>
         <img class="home_img" src="{{ homepage.image.url }}" alt="homepage_img">
-        {{ homepage.text|safe }}
+        <div class="admin-content">
+            {{ homepage.text|safe }}
+        </div>
     </div>
 {% endblock %}  
