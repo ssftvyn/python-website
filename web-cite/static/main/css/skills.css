@@ -1,0 +1,33 @@
+.admin-skills h2{
+    margin-top: 1%;
+    text-align: center;
+}
+
+.admin-skills .line {
+    height: 2px; 
+    background-color: #FFC801; 
+    margin: 20px 0;
+    margin-bottom: 10px;
+}
+
+.sli{
+    width: 90%;
+    margin: 20px 50px;
+}
+
+.admin-skills div {
+    margin: 5% 20%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.admin-skills p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.admin-skills p strong {
+    color: #FFC801;
+}

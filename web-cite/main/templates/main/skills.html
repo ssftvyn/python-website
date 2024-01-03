@@ -1,13 +1,13 @@
 {% extends 'main/mainpage.html' %}
 {% load static %}
 {% block styles %} 
-<link href="{% static 'main/css/home.css' %}" rel="stylesheet">
+<link href="{% static 'main/css/skills.css' %}" rel="stylesheet">
 <link href="{% static 'main/css/main.css' %}" rel="stylesheet">
 {% endblock %}
 {% block content %}
-    <div>
+    <div class="admin-skills">
     {{ skillspage.text|safe }}
-    <img class="skills" src="{{ skillspage.graph.url }}">
+    <img class='sli' class="skills" src="{{ skillspage.graph.url }}">
     </div>
 
 
