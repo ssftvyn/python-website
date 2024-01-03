@@ -1,22 +1,22 @@
 {% extends 'main/mainpage.html' %}
 {% load static %}
 {% block styles %} 
-<link href="{% static 'main/css/home.css' %}" rel="stylesheet">
+<link href="{% static 'main/css/vac.css' %}" rel="stylesheet">
 <link href="{% static 'main/css/main.css' %}" rel="stylesheet">
 {% endblock %}
 {% block content %}
     <div>
         {% for vacancy in vacancies %}
-            <div>
-                <h2>{{ vacancy.name }}</h2>
+            <div class="vacancies">
+                <h2 class="h2-vac">{{ vacancy.name }}</h2>
                 <br>
-                <p><b>Зарплата:</b> {{ vacancy.salary }}</p>
-                <p>{{ vacancy.description|safe }}</p>
-                <p><strong>Условия:</strong></p>
-                <p><b>Навыки:</b>{{ vacancy.key_skills }}</p>
-                <p><b>Компания:</b>{{ vacancy.employer.name }}</p>
-                <p><b>Расположение:</b> {{ vacancy.area.name }}</p>
-                <p><b>Дата публикации:</b> {{ vacancy.published_at}}</p>
+                <p class="p-vac"><b>Зарплата:</b> {{ vacancy.salary }}</p>
+                <p class="p-vac">{{ vacancy.description|safe }}</p>
+                <p class="p-vac"><strong>Условия:</strong></p>
+                <p class="p-vac"><b>Навыки:</b>{{ vacancy.key_skills }}</p>
+                <p class="p-vac"><b>Компания:</b>{{ vacancy.employer.name }}</p>
+                <p class="p-vac"><b>Расположение:</b> {{ vacancy.area.name }}</p>
+                <p class="p-vac"><b>Дата публикации:</b> {{ vacancy.published_at}}</p>
                 <hr>
             </div>
         {% endfor %}
