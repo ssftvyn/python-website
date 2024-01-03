@@ -1,0 +1,51 @@
+.admin-geo h2{
+    margin-top: 1%;
+}
+
+.admin-geo .line {
+    height: 2px; 
+    background-color: #FFC801; 
+    margin: 20px 0;
+    margin-bottom: 10px;
+}
+
+.geo{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    margin: 20px;
+}
+
+.admin-geo tr:nth-child(2n) {
+    background-color: #FFF1BE;
+}
+
+.admin-geo tr:hover {
+    background-color: #FFC801;
+}
+
+.admin-geo .row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
+.admin-geo .row .col {
+    flex: 1 0 0;
+    margin-right: 50px;
+}
+
+.admin-geo .row .col:last-child {
+    margin-right: 0;
+}
+
+.admin-geo .table th, .table td {
+    padding: 5px 20px;  
+    border: 1px solid #FF9900;
+    padding: 8px;
+    text-align: center;
+}
+
+.admin-geo .table th {
+    color: #2C444E;
+}
